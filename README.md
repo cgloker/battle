@@ -1,2 +1,2 @@
-# web-battle
+# battle
 Using Capybara and Selenium.
