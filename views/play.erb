@@ -1,0 +1,19 @@
+<h1> <%= @game.player_one.name %> vs. <%= @game.player_two.name %> </h1>
+
+<h2> It's <%= @game.turns[:attacker].name %>'s turn! </h2>
+
+<div id="player_one_id">
+  <h2>Player 1: <%= @game.player_one.name %></h2>
+  <p id="hit_points_id"> <%= @game.player_one.points %> HP</p>
+</div>
+
+<div id="player_two_id">
+  <h2>Player 2: <%= @game.player_two.name %></h2>
+  <p id="hit_points_id"> <%= @game.player_two.points %> HP</p>
+</div>
+
+<div id="tools">
+  <form action="/attack">
+    <input id="attack_button_id" type="submit" value="Attack">
+  </form>
+</div>
